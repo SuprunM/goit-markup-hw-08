@@ -1,0 +1,101 @@
+/* main title color: #212121; */
+/* second title color: #757575; */
+/* accent color color: #2196F3; */
+/* footer email color: rgba(255, 255, 255, 0.6); */
+/* white color: #FFFFFF; */
+/* logo black color: #000; */
+:root { 
+    --primary-text-color:#212121;
+    --title-text-color: #757575;
+    --accent-color: #2196f3;
+    --primary-white-color: #fff;
+    --black-text-color: #000;
+    
+}
+body {
+    color: var(--primary-text-color);
+}
+.list {
+    list-style: none;
+}
+
+.logo {
+    color: var(--black-text-color);  
+}
+.logo:hover {
+    color:  var(--accent-color)
+}
+.logo_web {
+    color:  var(--accent-color);
+}
+/* Стили для index.html */
+/* site nav */
+
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* auth */
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+    color: var(--accent-color);
+}
+/* hero */
+.hero-title{
+    color: var(--primary-white-color);
+}
+/* Section */
+.section {
+    color: var(--primary-text-color);
+}
+.section-title {
+    color: var(--primary-text-color);
+}
+
+/*  */
+
+/* features */
+.features-list .title {
+    color: var(--primary-text-color);
+}
+.features-list .link {
+    color: var(--accent-color);
+}
+
+/* examples */
+.work-list . title {
+    color: var(--primary-text-color);
+
+}
+
+/* button */
+.button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.button.primary {
+    color: 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стили для portfolio.html */
