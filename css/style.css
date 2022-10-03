@@ -18,11 +18,10 @@ body {
   color: var(--title-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  
+
   line-height: 1.71;
-  
+
   letter-spacing: 0.03em;
- 
 }
 .list {
   list-style: none;
@@ -101,7 +100,7 @@ body {
 }
 .section-title {
   color: var(--primary-text-color);
-  
+
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -117,7 +116,7 @@ body {
 
 .features-list .title {
   color: var(--primary-text-color);
-  
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -153,7 +152,7 @@ body {
   background-color: var(--accent-color);
   border: 0;
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgb(0 0 0 /0.15);
   border-radius: 4px;
   font-family: inherit;
   font-weight: 700;
@@ -169,14 +168,14 @@ body {
   color: var(--primary-white-color);
 
   background: var(--button-active-color);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / .5);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 0.5);
   border-radius: 4px;
 }
 .primary-button:active {
   color: var(--primary-white-color);
 
   background: var(--button-active-color);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / .5);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 0.5);
   border-radius: 4px;
 }
 
@@ -214,15 +213,13 @@ body {
   color: var(--accent-color);
 }
 .auth-nav .link-footer {
-  color: rgb(255 255 255 / .6);
+  color: rgb(255 255 255 / 0.6);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
- 
-
 }
 .auth-nav .link-footer:hover,
 .auth-nav .link-footer:active {
@@ -231,16 +228,16 @@ body {
 .auth-nav .link-adress {
   color: var(--primary-white-color);
   font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+  font-size: 14px;
+  line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 }
 .footer-style {
   font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /* Стили для portfolio.html */
