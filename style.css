@@ -215,7 +215,7 @@ body {
 }
 .auth-nav .link-footer {
   color: rgb(255 255 255 / .6);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -230,6 +230,9 @@ body {
 }
 .auth-nav .link-adress {
   color: var(--primary-white-color);
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
   text-decoration: none;
   font-style: normal;
 }
