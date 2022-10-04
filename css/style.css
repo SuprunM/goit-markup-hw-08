@@ -110,6 +110,9 @@ body {
 }
 
 /* features */
+.features-filters {
+  list-style: none;
+}
 .features-list {
   list-style: none;
 }
@@ -266,7 +269,8 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-/* features link */
+/* features */
+
 .features-link {
   text-decoration: none;
 }
