@@ -80,12 +80,12 @@ ul {
 }
 /* Стили для index.html */
 /* site nav */
+.header{
+  border-bottom: 1px solid var(--bottom-line);
+}
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--bottom-line);
 }
 .site-nav {
   display: flex;
@@ -100,8 +100,8 @@ ul {
 }
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -135,13 +135,10 @@ ul {
 }
 
 /* hero */
-.hero {
-  background-color: var(--background-style-color);
-  text-align: center;
-  padding: 200px 0;
-}
+
 .hero-title {
-  margin-bottom: 20px;
+  margin: 0 auto 30px;
+  max-width: 696px;
   color: var(--primary-white-color);
   text-transform: uppercase;
   font-weight: 900;
@@ -152,12 +149,23 @@ ul {
 /* Section */
 .section {
   color: var(--primary-text-color);
+  margin-top: 94px;
+  margin-bottom: 94px;
+
+}
+.section-hero{
+  margin-bottom: 94px;
+  background-color: var(--background-style-color);
+  text-align: center;
+  padding: 200px 0;
 }
 .section-team {
+  margin-top: 94px;
   background-color: var(--button-color);
-  padding: 94px 0 0 0;
 }
 .section-title {
+  
+  padding-bottom: 50px;
   text-align: center;
   color: var(--primary-text-color);
 
@@ -165,7 +173,20 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
+.section-title-team {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: var(--primary-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+
 .section-tagline {
+  margin-top: 94px;
   margin-bottom: 94px;
   list-style: none;
 }
@@ -180,7 +201,6 @@ ul {
 .features-list {
   display: flex;
   list-style: none;
-  padding: 94px 0;
 }
 .features-list-contant + .features-list-contant {
   margin-left: 30px;
@@ -188,7 +208,6 @@ ul {
 .features-list-image {
   display: flex;
   list-style: none;
-  padding: 50px 0 94px 0;
 }
 .features-list-image .img-team + .img-team {
   margin-left: 30px;
@@ -213,9 +232,9 @@ ul {
 }
 /* examples */
 .work-list {
+  padding-bottom: 94px;
   display: flex;
   list-style: none;
-  padding: 50px 0 97px 0;
 }
 .work-list .title {
   color: var(--primary-text-color);
@@ -301,7 +320,7 @@ ul {
 }
 /* Footer */
 .down-page {
-  padding: 60px 0;
+  padding: 65px 0;
   background-color: var(--background-style-color);
 }
 .logo-footer {
@@ -324,11 +343,8 @@ ul {
   display: inline-block;
 }
 .auth-nav-footer .link-footer {
-  padding: 9px 0;
   color: rgb(255 255 255 / 0.6);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
@@ -348,11 +364,10 @@ ul {
   text-decoration: none;
   font-style: normal;
 }
-.footer-style {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+.footer-link {
+  padding-bottom: 9px;
+  height: 21px;
+  box-sizing: content-box;
 }
 
 /* Стили для portfolio.html */
