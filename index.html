@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <title>goit-markup-hw-04</title>
+  <title>goit-markup-hw-05</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
 </head>
@@ -22,7 +22,10 @@
       <a href="#" class="logo"> <span class="logo-web">Web</span>Studio </a>
       <nav>
         <ul class="site-nav list">
-          <li class="item"><a href="#" class="link current">Студія</a></li>
+          <li class="item">
+            <div class="link-border"></div>
+            <a href="#" class="link current">Студія</a>
+          </li>
           <li class="item">
             <a href="./portfolio.html" class="link">Портфоліо</a>
           </li>
@@ -54,7 +57,7 @@
     <section class="section-hero">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="primary-button" type="button">Замовити послугу</button>
+        <button class="primary-button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- Переваги -->
@@ -119,12 +122,21 @@
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="features-list-image">
           <li class="img-team">
+            <div class="img-team-info">
+              <p class="img-team-info-title">Десктопні додатки</p>
+            </div>
             <img src="./images/photo1.jpg" alt="comp and hands" width="370" height="294" />
           </li>
           <li class="img-team">
+            <div class="img-team-info">
+              <p class="img-team-info-title">Мобільні додатки</p>
+            </div>
             <img src="./images/photo2.jpg" alt="phone comp and hands" width="370" height="294" />
           </li>
           <li class="img-team">
+            <div class="img-team-info">
+              <p class="img-team-info-title">Дизайнерські рішення</p>
+            </div>
             <img src="./images/photo3.jpg" alt="ipad and hands" width="370" height="294" />
           </li>
         </ul>
@@ -438,6 +450,21 @@
       </ul>
     </div>
   </footer>
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <h2>
+        Залиште свої дані, ми вам передзвонимо
+      </h2>
+      <p>
+        Погоджуюся з розсилкою та приймаю Умови договору
+      </p>
+      <button class="modal-close-button" type="button" data-modal-close>
+        123
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+</body>
 </body>
 
 </html>
