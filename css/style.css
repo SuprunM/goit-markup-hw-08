@@ -252,6 +252,8 @@ ul {
   padding-bottom: 94px;
 }
 .section-hero {
+  max-width: 1600px;
+  margin: 0 auto ;
   padding-bottom: 94px;
   background-color: var(--overlay-color);
   background-image: linear-gradient(
@@ -799,6 +801,7 @@ ul {
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -808,9 +811,11 @@ ul {
   visibility: hidden;
   pointer-events: none;
   overflow: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  position: absolute;
+  display: flex;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -819,13 +824,21 @@ ul {
   background-color:var(--primary-white-color);
 }
 .modal-close-button {
-  position: relative;
+  position: absolute;
+  top:8px;
+  right:8px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+    background-color: rgba(0, 0, 0, 0.0);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
 .modal-img {
   
   top: 10px;
   right: 10px;
-  display: block;
   width: 30px;
   height: 30px;
   border: var(--black-text-color);
@@ -833,7 +846,5 @@ ul {
   border-radius: 50%;
 }
 .modal-icon {
-  position: absolute;
-  background-size: cover;
-  margin: 12px;
+  
 }
