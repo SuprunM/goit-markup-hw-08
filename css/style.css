@@ -669,6 +669,49 @@ ul {
   fill: var(--primary-white-color);
   border-radius: 50%;
 }
+.footer-mailing-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.input-mailing-list {
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--background-style-color) ;
+  color: rgba(255, 255, 255, 0.6);
+
+}
+.mailing-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footer-telegram-input {
+  margin-left: 93px;
+  display: flex;
+}
+.footer-button {
+  width: 200px;
+  height: 50px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
+}
+.mailing-list-icon {
+  fill: var(--primary-white-color);
+  margin-left: 10px;
+}
 
 /* Стили для portfolio.html */
 
@@ -855,10 +898,12 @@ ul {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  padding-bottom: 12px;
 
 }
 /* form */
+.form-input {
+  margin: 10px 0;
+}
 .form-label {
   display: block;
   font-size: 12px;
@@ -881,24 +926,26 @@ ul {
   margin-bottom: ;
   display: block;
   max-width: 100%;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea:focus {
   border-color: var(--accent-color);
 }
-.form-control {
+.input-wrapper {
   position: relative;
 }
-.form-input {
+.input {
   width: 100%;
   padding: 11px 12px 11px 32px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus {
+.input:focus {
   border-color:  var(--accent-color);
 }
-.form-control:focus-within .form-icon {
+.input-wrapper:focus-within .form-icon {
   fill: var(--accent-color);
 }
 
@@ -909,6 +956,7 @@ ul {
   color: var(--primary-text-color);
   transform: translateY(-50%);
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* checkbox  */
 .checkbox-main {
@@ -960,4 +1008,6 @@ ul {
   top: 50%;
   left: 50%;
   transform: translateX(-50%);
+  margin-top: 30px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

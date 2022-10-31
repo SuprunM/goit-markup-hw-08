@@ -447,6 +447,20 @@
             </li>
           </ul>
         </li>
+        <li class="footer-telegram-input">
+          <div class="footer-input">
+            <label class="footer-mailing-list" for="mailing-list">Підпишіться на розсилку</label>
+            <div class="mailing-list">
+              <input class="input-mailing-list" id="mailing-list" type="email" name="mailing-list" required placeholder="E-mail">
+              <button class="primary-button footer-button" type="submit" data-modal-open>Підписатися
+                <svg class="mailing-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
+          </div>
+          
+
+        </li>
       </ul>
     </div>
   </footer>
@@ -461,35 +475,38 @@
       <h2 class="modal-main-text">
         Залиште свої дані, ми вам передзвонимо
       </h2>
-      <form action="contact-form" autocomplete="on">
-        <label class="form-label" for="person-name">Ім'я</label>
-        <div class="form-control">
-          <input class="form-input" id="person-name" type="text" name="person-name">
-          <svg width="12" height="12" class="form-icon">
-            <use href="./images/icons.svg#icon-name"></use>
+      <form action="contact-form" autocomplete="off" novalidate>
+        <div class="form-input">
+          <label class="form-label" for="person-name">Ім'я</label>
+          <div class="input-wrapper">
+            <input class="input" id="person-name" type="text" name="person-name" required>
+            <svg width="12" height="12" class="form-icon">
+              <use href="./images/icons.svg#icon-name"></use>
           
-          </svg>
+            </svg>
+          </div>
         </div>
-        <label class="form-label" for="person-name">Телефон</label>
-        <div class="form-control">
-          <input class="form-input" id="person-phone" type="tel" name="person-phone">
-          <svg width="13" height="13" class="form-icon">
-            <use href="./images/icons.svg#icon-phone-info"></use>
-        
-          </svg>
+        <div class="form-input">
+          <label class="form-label" for="person-name">Телефон</label>
+          <div class="input-wrapper">
+            <input class="input" id="person-phone" type="tel" name="person-phone" required>
+            <svg width="13" height="13" class="form-icon">
+              <use href="./images/icons.svg#icon-phone-info"></use>
+          
+            </svg>
+          </div>
         </div>
-        <label class="form-label" for="person-name">Пошта</label>
-        <div class="form-control">
-          <input class="form-input" id="person-mail" type="text" name="person-mail">
-          <svg width="15" height="12" class="form-icon">
-            <use href="./images/icons.svg#icon-mail-info"></use>
-        
-          </svg>
+        <div class="form-input">
+          <label class="form-label" for="person-name">Пошта</label>
+          <div class="input-wrapper">
+            <input class="input" id="person-mail" type="email" name="person-mail" required>
+            <svg width="15" height="12" class="form-icon">
+              <use href="./images/icons.svg#icon-mail-info"></use>
+          
+            </svg>
+          </div>
         </div>
-
-
-
-        <label class="form-label" for="person-comment">Коментар</label>
+        <label class="form-label"  for="person-comment">Коментар</label>
         <textarea 
           class="form-textarea"
           name="person-comment" 
