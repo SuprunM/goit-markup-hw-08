@@ -451,14 +451,15 @@
           <div class="footer-input">
             <label class="footer-mailing-list" for="mailing-list">Підпишіться на розсилку</label>
             <div class="mailing-list">
-              <input class="input-mailing-list" id="mailing-list" type="email" name="mailing-list" required placeholder="E-mail">
+              <input class="input-mailing-list" id="mailing-list" type="email" name="mailing-list" required
+                placeholder="E-mail">
               <button class="primary-button footer-button" type="submit" data-modal-open>Підписатися
                 <svg class="mailing-list-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-telegram"></use>
                 </svg>
               </button>
-          </div>
-          
+            </div>
+
 
         </li>
       </ul>
@@ -482,7 +483,7 @@
             <input class="input" id="person-name" type="text" name="person-name" required>
             <svg width="12" height="12" class="form-icon">
               <use href="./images/icons.svg#icon-name"></use>
-          
+
             </svg>
           </div>
         </div>
@@ -492,7 +493,7 @@
             <input class="input" id="person-phone" type="tel" name="person-phone" required>
             <svg width="13" height="13" class="form-icon">
               <use href="./images/icons.svg#icon-phone-info"></use>
-          
+
             </svg>
           </div>
         </div>
@@ -502,36 +503,33 @@
             <input class="input" id="person-mail" type="email" name="person-mail" required>
             <svg width="15" height="12" class="form-icon">
               <use href="./images/icons.svg#icon-mail-info"></use>
-          
+
             </svg>
           </div>
         </div>
-        <label class="form-label"  for="person-comment">Коментар</label>
-        <textarea 
-          class="form-textarea"
-          name="person-comment" 
-          id="person-comment"
+        <label class="form-label" for="person-comment">Коментар</label>
+        <textarea class="form-textarea" name="person-comment" id="person-comment"
           placeholder="Введіть текст"></textarea>
-          
-          <div class="checkbox-main">
-            <div class="checkbox-icons">
-                <svg width="16" height="15" class="checkbox-icon">
-                 <use href="./images/icons.svg#icon-checkbox"></use>
-                </svg>
-                <div class="checkbox-accept">
-                  <svg width="11" height="8" class="checkbox-icon-accept">
-                    <use href="./images/icons.svg#icon-checkbox-accept"></use>
-                  
-                  </svg>
-                </div>
+
+        <div class="checkbox-main">
+          <div class="checkbox-icons">
+            <svg width="16" height="15" class="checkbox-icon">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+            <div class="checkbox-accept">
+              <svg width="11" height="8" class="checkbox-icon-accept">
+                <use href="./images/icons.svg#icon-checkbox-accept"></use>
+
+              </svg>
             </div>
-            <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
-            <label class="checkbox-label" for="terms-checkbox">
-              Погоджуюся з розсилкою та приймаю
-              <a href="#">Умови договору</a>
-            </label>
           </div>
-          <button class="primary-button form-button" type="submit" data-modal-open>Відправити</button>
+          <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
+          <label class="checkbox-label" for="terms-checkbox">
+            Погоджуюся з розсилкою та приймаю
+            <a href="#">Умови договору</a>
+          </label>
+        </div>
+        <button class="primary-button form-button" type="submit" data-modal-open>Відправити</button>
 
       </form>
     </div>
