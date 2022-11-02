@@ -990,6 +990,7 @@ ul {
   transition: border-color var(--accent-color),
   background-color var(--accent-color),
   fill var(--accent-color);
+  cursor: pointer;
 }
 /* checkbox-btn */
 .form-button {
