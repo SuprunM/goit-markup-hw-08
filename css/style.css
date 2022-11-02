@@ -947,6 +947,7 @@ ul {
   background-color: var(--accent-color);
   border-radius: 2px;
   fill: var(--accent-color);
+  opacity: 1;
 }
 .checkbox-label {
   position: relative;
@@ -954,11 +955,8 @@ ul {
 .checkbox-label a {
   color: var(--accent-color);
 }
-.checkbox-label::before {
-  content: "";
-}
 .checkbox-icon {
-  position: relative;
+  position: absolute;
   left: 0;
   top: 0;
 }
@@ -970,7 +968,7 @@ ul {
   width: 16px;
   height: 15px;
   fill: var(--primary-white-color);
-  opacity:0;
+  opacity: 1;
 }
 
 .checkbox-icons {
@@ -979,6 +977,7 @@ ul {
   width: 15px;
   margin-right: 7px;
   align-items: center;
+  justify-content: center;
   
 
 }
