@@ -1,0 +1,36 @@
+.tagline__section {
+    padding-top: 94px;
+    list-style: none;
+}
+
+.tagline__list {
+    display: flex;
+    list-style: none;
+}
+
+.tagline__contant+.tagline__contant {
+    margin-left: 30px;
+}
+
+.tagline__img {
+    display: block;
+
+    background-color: var(--button-color);
+    margin-bottom: 30px;
+}
+
+.tagline__icon {
+    height: 70px;
+    width: 70px;
+    margin: 25px 100px;
+    background-size: cover;
+}
+
+.tagline__title {
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
