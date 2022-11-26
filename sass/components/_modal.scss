@@ -34,36 +34,33 @@
     background-color: var(--primary-white-color);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
-}
-
-.modal__close-button {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-}
-
-.modal__img {
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    border: var(--black-text-color);
-    fill: var(--black-text-color);
-    border-radius: 50%;
-}
-
-.modal__text {
-    color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
+    &__close-button {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 30px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+        }
+    &__img {
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        border: var(--black-text-color);
+        fill: var(--black-text-color);
+        border-radius: 50%;
+    }
+    &__text {
+        color: var(--primary-text-color);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    }
 }
