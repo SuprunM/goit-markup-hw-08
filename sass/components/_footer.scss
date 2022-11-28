@@ -5,6 +5,7 @@
             display: flex;
             align-items: baseline;
             list-style: none;
+            justify-content: space-between
         }
     &__logo {
         color: var(--primary-white-color);
