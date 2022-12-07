@@ -23,6 +23,16 @@
       <a href="#" class="header__logo">
         <span class="header__web">Web</span>Studio
       </a>
+      <button 
+        type="button" 
+        class="menu-toggle" 
+        aria-expanded="false" 
+        aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
       <nav>
         <ul class="header__site-nav">
           <li class="header__item">
@@ -74,7 +84,7 @@
         <ul class="tagline__list">
           <li class="tagline__contant">
             <span class="tagline__img">
-              <svg class="tagline__icon" width="270" height="120">
+              <svg class="tagline__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-antenna1"></use>
               </svg>
             </span>
@@ -86,7 +96,7 @@
           </li>
           <li class="tagline__contant">
             <span class="tagline__img">
-              <svg class="tagline__icon" width="270" height="120">
+              <svg class="tagline__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-clock1"></use>
               </svg>
             </span>
@@ -98,7 +108,7 @@
           </li>
           <li class="tagline__contant">
             <span class="tagline__img">
-              <svg class="tagline__icon" width="270" height="120">
+              <svg class="tagline__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-diagram1"></use>
               </svg>
             </span>
@@ -109,7 +119,7 @@
           </li>
           <li class="tagline__contant">
             <span class="tagline__img">
-              <svg class="tagline__icon" width="270" height="120">
+              <svg class="tagline__icon" width="70" height="70">
                 <use href="./images/icons.svg#icon-astronaut1"></use>
               </svg>
             </span>
@@ -395,7 +405,7 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__box">
-        <div>
+        <div class="footer__navigation">
           <a href="" class="footer__logo">
             <span class="footer__web">Web</span>Studio</a>
           <address class="footer__address">
@@ -455,7 +465,7 @@
           </ul>
         </div>
         <div class="telegram footer__input">
-          <div>
+          <div class="telegram__subscribe">
             <p class="telegram__label" for="telegram__post">Підпишіться на розсилку</p>
             <div class="telegram__post">
               <input class="telegram__input" id="telegram__post" type="email" name="telegram__post" required
@@ -472,6 +482,22 @@
       </div>
     </div>
   </footer>
+  <!-- mobile-menu -->
+  <div class="mobile-menu">
+    <div class="container">
+      <button class="mobile-menu__close-button"></button>
+      <nav class="mobile-menu__nav">
+        
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </div>
   <!-- backdrop -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -536,6 +562,7 @@
       </form>
     </div>
   </div>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 

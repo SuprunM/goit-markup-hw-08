@@ -1,24 +1,102 @@
 .tagline {
-    padding-top: 94px;
-    list-style: none;
-
-    &__list {
-            display: flex;
-            list-style: none;
+    
+    @media screen and (min-width:480px) {
+            width: 480x;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
         }
-    &__contant + &__contant {
-        margin-left: 30px;
+    @media screen and (min-width:768px) {
+            width: 768px;
+            padding-top: 60px;
+        }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        padding-top: 94px;
+        list-style: none;
+        margin: auto;
+        padding-bottom: 0px;
     }
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__list {
+            list-style: none;
+            @media screen and (min-width:480px) {
+                   
+                    display: flex;
+                    flex-direction: column;
+                    
+            
+                }
+            
+                @media screen and (min-width:768px) {
+                    
+                    display: flex;
+                    
+                    flex-direction: row;
+                }
+            
+                @media screen and (min-width:1200px) {
+                    display: flex;
+                    gap: 30px;
+                }
+        }
+    // &__contant + &__contant {
+    //     margin-left: 30px;
+    //     @media screen and (min-width: 480px) {
+                
+    //             display: flex;
+    //             flex-direction: column;
+    //             margin-left: 0px;
+        
+    //         }
+    //     @media screen and (min-width:768px) {
+                
+    //             display: flex;
+    //             flex-direction: column;
+    //             width: 50%;
+    //             }
+
+    // }
+    &__contant {
+            margin-left: 30px;
+            @media screen and (min-width:480px) {
+                
+                display: flex;
+                flex-direction: column;
+                margin-left: 0px;
+    
+            }
+    
+            @media screen and (min-width:768px) {
+               
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+            &:not(:last-child){
+                @media screen and (min-width:480px) {
+                
+                        margin-bottom: 30px;
+            }
+
+        }
+    }
+        
     &__img {
         display: block;
     
         background-color: var(--button-color);
-        margin-bottom: 30px;
+       
+        border-radius: 4px;
     }
     &__icon {
         height: 70px;
         width: 70px;
-        margin: 25px 100px;
+        margin: 25px 40%;
         background-size: cover;
     }
     &__title {
@@ -28,5 +106,12 @@
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        @media screen and (min-width:480px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 30px;
+        
+            }
     }
 }

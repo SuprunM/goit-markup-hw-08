@@ -1,12 +1,47 @@
 .footer {
+    
     padding: 65px 0;
     background-color: var(--background-style-color);
     &__box {
-            display: flex;
-            align-items: baseline;
-            list-style: none;
-            justify-content: space-between;
+            
+            @media screen and (min-width: 480px) {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            
+                @media screen and (min-width: 768px) {
+                    width: 768px;
+                }
+            
+                @media screen and (min-width: 1200px) {
+                    width: 1200px;
+                    display: flex;
+                    align-items: baseline;
+                    list-style: none;
+                    justify-content: space-between;
+                    flex-direction: row;
+                }
         }
+    &__navigation {
+        @media screen and (min-width: 480px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        
+            @media screen and (min-width: 768px) {
+                
+            }
+        
+            @media screen and (min-width: 1200px) {
+               display: inline-block;
+            }
+    }
     &__logo {
         color: var(--primary-white-color);
         font-family: "Raleway";
@@ -21,12 +56,26 @@
                 text-decoration: none;
             }
     }
-    &__address {
-        padding-top: 20px;
-    }
+    
     &__nav {
-        display: inline-block;
-        list-style: none;
+        
+        @media screen and (min-width: 480px) {
+                padding-top: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                list-style: none;
+        
+        
+            }
+        
+            @media screen and (min-width: 768px) {}
+        
+            @media screen and (min-width: 1200px) {
+                display: inline-block;
+                    list-style: none;
+            }
     }
     &__link {
         color: rgb(255 255 255 / 0.6);
@@ -53,6 +102,14 @@
     }
     &__join {
         margin-left: 70px;
+        @media screen and (min-width: 480px) {
+                margin-left: 0;
+                margin-top: 60px;
+            }
+        
+            @media screen and (min-width: 768px) {}
+        
+            @media screen and (min-width: 1200px) {}
     }
     &__title {
         
@@ -62,6 +119,15 @@
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--primary-white-color);
+        @media screen and (min-width: 480px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            @media screen and (min-width: 768px) {}
+        
+            @media screen and (min-width: 1200px) {}
     }
     &__socials {
         display: flex;
@@ -92,6 +158,15 @@
     &__input {
         margin-left: 93px;
         display: flex;
+        @media screen and (min-width: 480px) {
+                margin-left: 0;
+            }
+        
+            @media screen and (min-width: 768px) {}
+        
+            @media screen and (min-width: 1200px) {
+                
+            }
     }
     
 
@@ -102,19 +177,45 @@
   border-radius: 50%;
 } */
 .telegram {
+    &__subscribe {
+        @media screen and (min-width: 480px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 60px;
+            }
+        
+            @media screen and (min-width: 768px) {}
+        
+            @media screen and (min-width: 1200px) {}
+    }
+   
     &__label {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--primary-white-color);
-        margin-bottom: 20px;
     }
     &__post {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: flex-end;
+        
+        @media screen and (min-width: 480px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+        
+            @media screen and (min-width: 768px) {
+            }
+        
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: row;
+            }
     }
     &__input {
         box-sizing: border-box;
@@ -131,6 +232,16 @@
         &::placeholder {
                 color: rgba(255, 255, 255, 0.6);
             }
+        @media screen and (min-width: 480px) {
+            max-width: 100%;
+            }
+        
+            @media screen and (min-width: 768px) {
+
+            }
+        
+            @media screen and (min-width: 1200px) {
+            }
     }
     &__button {
         display: flex;
@@ -138,6 +249,19 @@
         height: 50px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-left: 12px;
+        @media screen and (min-width: 480px) {
+            margin-top: 20px;
+            margin-left: 0;
+            }
+        
+            @media screen and (min-width: 768px) {
+                margin-left: 0;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                margin-left: 12px;
+            }
+        
     }
     &__icon {
         fill: var(--primary-white-color);

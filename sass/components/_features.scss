@@ -1,4 +1,19 @@
 .features {
+    @media screen and (max-width:1199px) {
+            display: none;
+        }
+    &__container {
+        
+        
+        @media screen and (max-width:1199px) {
+                display: none;
+            }
+        
+        @media screen and (min-width:1200px) {
+                width: 1200px;
+            }
+        }
+    
     &__title {
             padding-bottom: 50px;
             text-align: center;

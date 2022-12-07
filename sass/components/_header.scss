@@ -1,11 +1,28 @@
 .header {
     border-bottom: 1px solid var(--bottom-line);
+    
+    
+    
 
     &__container {
         max-width: 1200px;
         margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
+        @media screen and (min-width:480px) {
+                width: 480px;
+                position: relative;
+            }
+        
+        @media screen and (min-width:768px) {
+                width: 768px;
+            }
+        
+        @media screen and (min-width:1200px) {
+                width: 1200px;
+            }
+        
+            
     }
 
     &__logo {
@@ -21,7 +38,17 @@
             color: var(--accent-color);
             text-decoration: none;
         }
-
+        @media screen and (max-width:767px) {
+                display: flex;
+                min-height: 60px;
+                -webkit-box-pack: justify;
+                align-items: center;
+            }
+        
+        @media screen and (min-width:768px) {
+                
+               
+            }
 
     }
 
@@ -41,6 +68,9 @@
         line-height: 1.14;
         list-style: none;
         letter-spacing: 0.02em;
+        @media screen and (max-width: 767px) {
+                display: none;
+            }
     }
 
 
@@ -109,6 +139,9 @@
         align-items: center;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         list-style: none;
+        @media screen and (max-width: 767px) {
+                display: none;
+            }
     }
 
     &__auth-link {
@@ -162,4 +195,35 @@
 .header-nav {
     display: flex;
     align-items: center;
+}
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    flex-direction: column;
+    gap: 3px;
+    @media screen  and (min-width:768px){
+        display: none;
+    }
+    span {
+        display: block;
+        width: 24px;
+        height: 3px;
+        background-color: var(--primary-text-color);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
 }
