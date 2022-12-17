@@ -15,6 +15,7 @@
             @media screen and (min-width:768px) {
                 width: 768px;
                 padding-top: 60px;
+                padding-bottom: 60px;
             }
         
             @media screen and (min-width:1200px) {
@@ -39,12 +40,14 @@
                     
                     display: flex;
                     
-                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 29px;
                 }
             
                 @media screen and (min-width:1200px) {
                     display: flex;
                     gap: 30px;
+                    flex-wrap: nowrap;
                 }
         }
     // &__contant + &__contant {
@@ -75,10 +78,10 @@
             }
     
             @media screen and (min-width:768px) {
-               
+               margin-left: 0;
                 display: flex;
                 flex-direction: column;
-                width: 50%;
+                width: 48%;
             }
             &:not(:last-child){
                 @media screen and (max-width:767px) {

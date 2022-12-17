@@ -29,13 +29,14 @@
             justify-content: center;
             gap: 30px;
             @media screen and (max-width: 767px) {
-                    // display: flex;
-                    // flex-wrap: wrap;
-                    flex-basis: ((100% - 30px) / 2);
+                    display: flex;
+                    flex-wrap: wrap;
+                    // flex-basis: ((100% - 30px) / 2);
                 }
             
                 @media screen and (min-width: 768px) {
                     width: 768px;
+                    flex-wrap: wrap;
                 }
             
                 @media screen and (min-width: 1200px) {
