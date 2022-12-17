@@ -15,6 +15,12 @@
 
     text-align: center;
     padding: 200px 0;
+    @media(min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi)
+    {
+        background-image: url(../images/header@x2.jpg);
+
+    }
     @media screen and (min-width:480px) {
             width: 480px;
             padding: 94px 0;
