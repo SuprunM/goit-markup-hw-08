@@ -2,8 +2,115 @@
     position: fixed;
     top: 0;
     left: 0;
+    transform: translateX(100%);
     width: 100%;
     height: 100%;
     background-color: var(--primary-white-color);
+    padding: 40px;
+    z-index: 1111;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-open {
+        transform: translateX(0);
+    }
+    &__close-button {
+        position: absolute;
+        top: 21px;
+        right: 25px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+    }
+    &__icon {
+        width: 19px;
+        height: 19px;
+        &:hover,
+        &:focus {
+        fill: var(--accent-color)
+        }
+    }
+    &__site-nav {
+        list-style: none;
+        display: block;
+        
+
+        
+            
+    }
+    &__item {
+        margin-bottom: 32px;
+    }
+    &__link {
+        text-decoration: none;
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        cursor: pointer;
+        letter-spacing: .02em;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+        
+            
+        
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 134px;
+        left: 40px;
+        list-style: none;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+
+
+    }
+    &__auth-link {
+        color: var(--title-text-color);
+        text-decoration: none;
+        &:hover, &:focus {
+            color: var(--accent-color);
+        }
+    }
+    &__auth-item {
+        display: block;
+        & + & {
+            margin-top: 32px;
+        }
+
+    }
+    &__mail {
+        font-size: 24px;
+        line-height: 1.17;
+    }
+    &__socials {
+        display: flex;
+        list-style: none;
+        position: absolute;
+        bottom: 48px;
+        left: 40px;
+        gap: 20px;
+        
+    }
+    &__list:not(:last-child) {
+        margin-bottom: 9px;
+    }
     
+        &_
+    &__media {
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: var(--accent-color);
+        
+    }
 }
+
