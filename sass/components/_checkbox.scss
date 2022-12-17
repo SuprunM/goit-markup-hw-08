@@ -11,6 +11,19 @@
             & a {
                     color: var(--accent-color);
                 }
+            @media screen and (min-width:480px) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+                
+            @media screen and (min-width:768px) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            @media screen and (min-width:1200px) {
+                font-size: 14px;
+                line-height: 1.71;
+            }
         }
     &__input {
         appearance: none;
@@ -52,6 +65,13 @@
         transition: border-color var(--accent-color),
         background-color var(--accent-color), fill var(--accent-color);
         cursor: pointer;
+        @media screen and (min-width:480px) {
+                
+            }
+        
+            @media screen and (min-width:768px) {
+                
+            }
     }
 
     

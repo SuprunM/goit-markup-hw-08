@@ -1,26 +1,29 @@
 .tagline {
     
-    @media screen and (min-width:480px) {
-            width: 480x;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            
-        }
-    @media screen and (min-width:768px) {
-            width: 768px;
-            padding-top: 60px;
-        }
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-        padding-top: 94px;
-        list-style: none;
-        margin: auto;
-        padding-bottom: 0px;
-    }
+    
     &__container {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (min-width:480px) {
+                width: 480x;
+                padding-top: 60px;
+                padding-bottom: 60px;
+        
+            }
+        
+            @media screen and (min-width:768px) {
+                width: 768px;
+                padding-top: 60px;
+            }
+        
+            @media screen and (min-width:1200px) {
+                width: 1200px;
+                padding-top: 94px;
+                list-style: none;
+                margin: auto;
+                padding-bottom: 0px;
+            }
     }
     &__list {
             list-style: none;

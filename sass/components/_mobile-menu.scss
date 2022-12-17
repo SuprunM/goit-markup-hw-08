@@ -99,11 +99,9 @@
         gap: 20px;
         
     }
-    &__list:not(:last-child) {
-        margin-bottom: 9px;
-    }
     
-        &_
+    
+        
     &__media {
         font-size: 18px;
         line-height: 1.22;
@@ -111,6 +109,12 @@
         text-decoration: none;
         color: var(--accent-color);
         
+            
+        
+    
     }
+    &__list:not(:last-child) {
+                border-right: 1px solid rgba(33, 33, 33, 0.2);
+            }
 }
 
