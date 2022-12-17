@@ -1,9 +1,8 @@
 
 .hero {
-    
+    display: flex;
     max-width: 1600px;
     margin: 0 auto;
-    padding-bottom: 94px;
     background-color: var(--overlay-color);
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -21,24 +20,39 @@
         background-image: url(../images/header@x2.jpg);
 
     }
-    @media screen and (min-width:480px) {
-            width: 480px;
-            padding: 94px 0;
+    @media screen and (max-width:767px) {
+            padding: 118px 0;
     
         }
     
         @media screen and (min-width:768px) {
-            width: 768px;
+            padding: 118px 0;
         }
     
         @media screen and (min-width:1200px) {
-            width: 1200px;
+           
+            padding: 200px 0;
         }
+    &__container {
+        @media screen and (max-width:767px) {
+                width: 480px;
+        
+            }
+        
+            @media screen and (min-width:768px) {
+                width: 768px;
+            }
+        
+            @media screen and (min-width:1200px) {
+                width: 1200px;
+                
+            }
+    }    
     &__title {
             
-            @media screen and (min-width:480px) {
+            @media screen and (max-width:767px) {
                     margin: 0 auto 30px;
-                        max-width: 696px;
+                        
                         color: var(--primary-white-color);
                         text-transform: uppercase;
                         font-weight: 900;
@@ -48,7 +62,14 @@
                 }
             
                 @media screen and (min-width:768px) {
-                    
+                    margin: 0 auto 30px;
+                        max-width: 450px;
+                        color: var(--primary-white-color);
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        font-size: 26px;
+                        line-height: 1.62;
+                        letter-spacing: 0.06em;
                 }
             
                 @media screen and (min-width:1200px) {

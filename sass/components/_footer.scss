@@ -3,7 +3,7 @@
     padding: 65px 0;
     background-color: var(--background-style-color);
     &__container {
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
         
                 display: flex;
                 flex-direction: column;
@@ -29,7 +29,7 @@
             }
     }
     &__navigation {
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -61,7 +61,7 @@
     
     &__nav {
         
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
                 padding-top: 28px;
                 display: flex;
                 align-items: center;
@@ -104,7 +104,7 @@
     }
     &__join {
         margin-left: 70px;
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
                 margin-left: 0;
                 margin-top: 60px;
             }
@@ -121,7 +121,7 @@
         line-height: 1.14;
         text-transform: uppercase;
         color: var(--primary-white-color);
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -180,7 +180,7 @@
 } */
 .telegram {
     &__subscribe {
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -201,7 +201,7 @@
     }
     &__post {
         
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -234,7 +234,7 @@
         &::placeholder {
                 color: rgba(255, 255, 255, 0.6);
             }
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
             max-width: 100%;
             }
         
@@ -251,7 +251,7 @@
         height: 50px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-left: 12px;
-        @media screen and (min-width: 480px) {
+        @media screen and (max-width: 767px) {
             margin-top: 20px;
             margin-left: 0;
             }
