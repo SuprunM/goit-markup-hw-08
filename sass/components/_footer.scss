@@ -160,8 +160,10 @@
     &__input {
         margin-left: 93px;
         display: flex;
-        @media screen and (min-width: 480px) {
-                margin-left: 0;
+        flex-wrap: nowrap;
+        @media screen and (max-width: 767px) {
+                
+                margin: 0;
             }
         
             @media screen and (min-width: 768px) {}
