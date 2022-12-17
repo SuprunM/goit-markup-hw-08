@@ -16,7 +16,10 @@
                 width: 768px;
             }
         
-            @media screen and (min-width: 1200px) {
+            
+    }
+    &__box {
+        @media screen and (min-width: 1200px) {
                 width: 1200px;
                 display: flex;
                 align-items: baseline;
