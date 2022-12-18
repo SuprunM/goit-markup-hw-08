@@ -17,7 +17,10 @@
     @media(min-device-pixel-ratio: 2),
         (min-resolution: 192dpi)
     {
-        background-image: url(../images/header@x2.jpg);
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/header@x2.jpg);
 
     }
     @media screen and (max-width:767px) {
